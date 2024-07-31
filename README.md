@@ -55,7 +55,7 @@ Each SQL file in the `SQL` directory addresses a specific prompt from [w3resourc
 
 ### Example Queries
 
-#### Query 1: Retrieve a List of All Products
+####  Write a query in SQL to retrieve the salesperson for each PostalCode who belongs to a territory and SalesYTD is not zero. Return row numbers of each group of PostalCode, last name, salesytd, postalcode column. Sort the salesytd of each postalcode group in descending order. Shorts the postalcode in ascending order.
 
 ```sql
 SELECT
