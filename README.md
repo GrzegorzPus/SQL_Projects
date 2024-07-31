@@ -59,10 +59,14 @@ Each SQL file in the `SQL` directory addresses a specific prompt from [w3resourc
 
 ```sql
 SELECT
-    ProductID,
-    Name,
-    ProductNumber,
-    ListPrice
-FROM
-    Production.Product;
+    ROW_NUMBER() OVER (PARTITION BY postalcode ORDER BY salesytd DESC) AS 'rownumber',
+    lastname, salesytd,
+    postalcode FROM sales.SalesPerson AS SP
+INNER JOIN person.Person AS P
+    ON SP.businessentityid = P.businessentityid
+INNER JOIN person.Adress AS A
+    ON SP.businessentityid = A.addressid
+WHERE SP.salesytd IS NOT NULL
+    AND territoryid IS NOT NULL
+ORDER BY postalcode;
 
