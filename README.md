@@ -42,7 +42,7 @@ To set up the project locally, follow the steps below:
 
     ```bash
     git clone https://github.com/YourUsername/AdventureWorks_SQL_Project.git
-    cd AdventureWorks_SQL_Project
+    cd SQL_Project
     ```
 
 3. **Run the SQL Queries**:
