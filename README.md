@@ -69,4 +69,10 @@ INNER JOIN person.Adress AS A
 WHERE SP.salesytd IS NOT NULL
     AND territoryid IS NOT NULL
 ORDER BY postalcode;
+```
 
+## Additional Resources
+
+- [Microsoft AdventureWorks Sample Databases]([https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms)): This page provides information on how to download and set up the AdventureWorks sample databases. It also includes links to related resources and documentation.
+- [w3resource SQL Exercises](https://www.w3resource.com/sql-exercises/adventureworks/adventureworks-exercises.php): A comprehensive collection of SQL exercises ranging from basic to advanced levels. This site offers practical problems and solutions to help improve your SQL skills.
+- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15): The official download page for SQL Server Management Studio (SSMS). SSMS is an integrated environment for managing any SQL infrastructure, from SQL Server to Azure SQL Database.
